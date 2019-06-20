@@ -23,7 +23,7 @@ class Watch {
 
       console.log(time);
 
-    }, 2000);  
+    }, 1000);  
   }
 
   stop() {
