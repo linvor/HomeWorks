@@ -1,10 +1,10 @@
 const map = (array, fn) => {
-	let newArr = [];
+  let newArr = [];
 
-  	for (var i = 0; i < array.length; i++) {
-   		newArr[i] = fn(array[i], i, array);
-   } 
-   	return newArr;
+  for (var i = 0; i < array.length; i++) {
+    newArr[i] = fn(array[i], i, array);
+    } 
+  return newArr;
 };
 
 const array = [1, 2, 3];
