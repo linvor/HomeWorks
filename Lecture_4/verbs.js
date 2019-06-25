@@ -1,7 +1,7 @@
 class Speaker {
   constructor(name, verb) {
     this.name = name;
-    //this.verb = verb;
+    this.verb = verb;
   }
 
   set verb(verbal) {
