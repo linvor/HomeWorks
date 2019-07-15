@@ -1,6 +1,6 @@
 const ownFetch = url => {
   return new Promise(function(resolve, reject) {
-    var xhr = new XMLHttpRequest();
+    const xhr = new XMLHttpRequest();
     xhr.open("GET", url, true);
 
     xhr.onload = function() {
@@ -8,7 +8,7 @@ const ownFetch = url => {
         resolve(this.response);
       } else {
         var err = new Error(this.statusText);
-        err.code - this.status;
+        err.code = this.status;
         reject(err);
       }
     };
